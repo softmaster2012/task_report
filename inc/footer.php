@@ -1,0 +1,1 @@
+<h4>Copyright: &copy; Vladimir Popov, Kiev 2015</h4>

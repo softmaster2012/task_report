@@ -1,0 +1,46 @@
+/* Таблица стилей 2 */
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+nav ul li {
+    float: left;
+}
+nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 13pt;
+    color: white;
+    display: block;
+    width: 185px;
+    height: 35px;
+    padding-top: 10px;
+    background-color: lightseagreen;
+    transition: color 1s, background-color 1s;
+}
+nav ul li a:hover {
+    background-color: lavender;
+    color: blue;
+}
+article {
+    width: 1100px;
+    margin: 0 auto;
+    padding-top: 40px;    
+}
+section {
+    height: 550px;
+    border: 1px solid lightgrey;
+    margin-bottom: 3px;
+    padding: 10px;
+}
+#frame1 {
+    width: 95%;
+    height: 90%;
+    border: 1px solid lightgrey;
+    padding: 10px;
+}
+section h4 {
+    color: cadetblue;
+    margin: 5px;
+}

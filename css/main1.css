@@ -1,0 +1,42 @@
+/* Таблица стилей 1 */
+body {
+    margin: 0;
+    font: 12pt consolas;
+    text-align: center;
+}
+header {
+    width: 100%;
+    background-color: lightseagreen;
+    position: fixed;
+}
+#table1 {
+    border-spacing: 0;
+    border-collapse: collapse;
+    width: 1200px;
+    margin: 0 auto;
+}
+#logo {
+    width: 175px;
+    height: 44px;
+    margin-bottom: -4px;
+    transition: width 0.5s;
+}
+#logo:hover {
+    width: 200px;
+}
+.left1, .right1 {
+    width: 210px;
+}
+header h2 {
+    color: yellow;
+    margin: 0;
+}
+footer {
+    width: 100%;
+    background-color: lightgrey;
+    padding: 5px;
+}
+footer h4 {
+    color: darkblue;
+    margin: 5px;
+}   
