@@ -14,4 +14,6 @@
 <div id="modify_version_demo" class="div1">
     Демонстрация работы версии, модернизированной по ТЗ
     <hr>
+    <?php include 'lib/kcaptcha2/form_example.php'; ?>
+    <hr>
 </div>

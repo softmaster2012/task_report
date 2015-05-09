@@ -17,3 +17,8 @@ hr {
     size: 1px;
     color: lightgrey;
 }
+#frame2 {
+    border-width: 0;
+    width: 311px;
+    height: 171px;
+}
