@@ -5,3 +5,13 @@
         http://www.captcha.ru/kcaptcha/
     </a>
 </p>
+<div id="init_version_demo" class="div1">
+    Демонстрация работы исходной версии
+    <hr>
+    <?php include 'lib/kcaptcha/form_example.php'; ?>
+    <hr>
+</div>
+<div id="modify_version_demo" class="div1">
+    Демонстрация работы версии, модернизированной по ТЗ
+    <hr>
+</div>

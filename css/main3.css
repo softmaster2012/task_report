@@ -1,1 +1,19 @@
 /* Таблица стилей 3 */
+#init_version_demo {    
+    float: left;
+}
+#modify_version_demo {
+    margin-left: 545px;
+}
+.div1 {
+    width: 510px;
+    border: 1px solid silver;
+    border-radius: 10px;
+    box-shadow: 0 0 silver, 0 0 20px silver;
+    padding: 10px;
+}
+hr {
+    width: 90%;
+    size: 1px;
+    color: lightgrey;
+}
