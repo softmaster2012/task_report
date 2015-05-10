@@ -27,8 +27,10 @@
                 mysql_select_db($db_name);
 
                 $query = "";
-                $query .= "SELECT ID, name, grade FROM students WHERE 1 < ";
-                $query .= "(SELECT COUNT(*) FROM likes WHERE students.ID=likes.liked_ID)";
+                $query .= "SELECT ID, name, grade FROM students WHERE EXISTS ";
+                $query .= "(SELECT * FROM likes WHERE students.ID=likes.like_ID) ";
+                $query .= "AND NOT EXISTS ";
+                $query .= "(SELECT * FROM likes WHERE students.ID=likes.liked_ID) ";
                 $result = mysql_query($query);
                 $N = mysql_num_rows($result);
 
