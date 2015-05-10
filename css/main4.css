@@ -1,4 +1,4 @@
-#frame3 {
+#frame3, #frame4 {
     width: 100%;
     height: 100%;
     border-width: 0;
@@ -9,4 +9,9 @@
 .b {
     width: 230px;
     margin: 5px;
+}
+#box3 {
+    height: 500px; 
+    border: 1px solid lightgrey; 
+    border-radius: 10px;
 }
