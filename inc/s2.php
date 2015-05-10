@@ -5,46 +5,21 @@
             <fieldset>
                 <legend>db_edit</legend>
                 <form id="form1" action="hnd/handler1.php" method="post">
-                    <br>___Имя:<input type="text" name="name" required><br>
-                    <br>Оценка:<input type="number" name="grade" value="0"><br>
-                    <br><input type="submit" name="submit1" value="Добавить студента в базу данных">
+                    <br>___Имя:<input type="text" name="name" class="inp1" required>
+                    <br>Оценка:<input type="number" name="grade" class="inp1" value="0">
+                    <br><input type="submit" name="submit1" class="b" value="Добавить студента в базу данных">
                 </form>
                 <form id="form2" action="hnd/handler2.php" method="post">
-                    <br>__Имя1:<input type="text" name="name1" required><br>
-                    <br>__Имя2:<input type="text" name="name2" required><br>
-                    <br><input type="submit" name="submit2" value="Добавить лайк в базу данных">
+                    <br>___ID1:<input type="text" name="id1" class="inp1" required>
+                    <br>___ID2:<input type="text" name="id2" class="inp1" required>
+                    <br><input type="submit" name="submit2" class="b" value="Добавить лайк в базу данных">
                 </form>
             </fieldset>
         </td>
         <td class="view" rowspan="2">
             <fieldset>
                 <legend>db_view</legend>
-                <table id="view1" width="100%" style="border-collapse: collapse" border="1">
-                    <?php
-                        require 'res/db_config.php';                        
-                        $conn = mysql_connect($db_host, $db_user, $db_pass);
-                        mysql_select_db($db_name);
-    
-                        $query = "SELECT * FROM students";
-                        $result = mysql_query($query);
-                        $N = mysql_num_rows($result);
-                        
-                        $records = array();
-                        if ($N > 0) {
-                            for ($i = 0; $i < $N; $i++) {
-                                $records[] = mysql_fetch_array($result);
-                            }
-                            foreach ($records as $rec) {
-                                echo '<tr>';
-                                echo '<td>'.$rec['ID'].'</td>';
-                                echo '<td align="left">'.$rec['name'].'</td>';
-                                echo '<td>'.$rec['grade'].'</td>';
-                                echo '</tr>';
-                            }
-                        }
-                        mysql_close($conn);
-                    ?>
-                </table>
+                <iframe id="frame3" name="frame3" src=""></iframe>
             </fieldset>
         </td>
     </tr>
@@ -52,6 +27,12 @@
         <td class="control">
             <fieldset>
                 <legend>db_control</legend>
+                <br>
+                <button id="view_students"  class="b">Вывести список студентов</button>
+                <button id="view_likes"  class="b">Вывести список лайков</button>
+                <button id="view_a"  class="b">Выборка по заданию (а)</button>
+                <button id="view_b"  class="b">Выборка по заданию (b)</button>
+                <button id="view_c"  class="b">Выборка по заданию (c)</button>
             </fieldset>
         </td>        
     </tr>
